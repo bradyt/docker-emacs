@@ -8,4 +8,9 @@
   (package-refresh-contents))
 
 (mapc 'package-install
-      (seq-remove 'package-installed-p '(use-package)))
+      (seq-remove 'package-installed-p '(put
+                                         your
+                                         list
+                                         of
+                                         packages
+                                         here)))
