@@ -8,4 +8,6 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(mapc 'package-install '(use-package))
+(mapc 'package-install '(powerline))
+
+(powerline-default-theme)
