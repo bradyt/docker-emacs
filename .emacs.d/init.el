@@ -1,4 +1,3 @@
-
 (setq package-archives
       '(("gnu" . "https://elpa.gnu.org/packages/")
         ("melpa" . "https://melpa.org/packages/")
@@ -8,4 +7,5 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(mapc 'package-install '(use-package))
+(mapc 'package-install
+      (seq-remove 'package-installed-p '(use-package)))
