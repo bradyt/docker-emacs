@@ -21,11 +21,6 @@
 (c-add-style "java-google-style-indentation"
              '((c-basic-offset . 2)
                (c-offsets-alist
-                (topmost-intro . 0)
-                (inclass . +)
-                (defun-block-intro . +)
                 (inexpr-class . 0)
                 (case-label . +)
-                (statement-case-intro . +)
-                (statement-block-intro . +)
                 (statement-cont . ++))))
