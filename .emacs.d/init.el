@@ -6,7 +6,7 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-(add-hook 'java-mode-hook (defun my-set-java-tab-width () (setq tab-width 2)))
+(add-hook 'java-mode-hook (defun my-set-java-tab-width () (setq tab-width 4)))
 (setq lsp-java-format-settings-url "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml")
 (setq lsp-java-format-settings-profile "GoogleStyle")
 (setq lsp-enable-snippet nil)
@@ -19,7 +19,7 @@
 (setcdr (assoc 'java-mode c-default-style) "java-google-style-indentation")
 
 (c-add-style "java-google-style-indentation"
-             '((c-basic-offset . 2)
+             '((c-basic-offset . 4)
                (c-offsets-alist
                 (inexpr-class . 0)
                 (case-label . +)
