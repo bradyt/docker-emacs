@@ -7,8 +7,7 @@
   (package-refresh-contents))
 
 (mapc 'package-install
-      (seq-remove 'package-installed-p '(lsp-java
-                                         lsp-mode)))
+      (seq-remove 'package-installed-p '(lsp-java)))
 
 (add-hook 'java-mode-hook (defun my-set-java-tab-width () (setq tab-width 2)))
 (setq lsp-java-format-settings-url "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml")
