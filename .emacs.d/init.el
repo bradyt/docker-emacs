@@ -8,3 +8,5 @@
 
 (mapc 'package-install
       (seq-remove 'package-installed-p '(ivy)))
+
+(ivy-mode)
