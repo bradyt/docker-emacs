@@ -5,13 +5,10 @@
         ("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 
-(setq dart-debug t)
-
-(setq lsp-dart-sdk-dir "/usr/lib/dart/")
-
 (let ((packages-to-install
        (seq-remove 'package-installed-p
                    '(dart-mode
+                     lsp-mode
                      dart-server))))
   (when packages-to-install
     (package-refresh-contents)
